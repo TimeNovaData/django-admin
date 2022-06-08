@@ -1,3 +1,10 @@
+/* @import url("https://novadata.com.br/intranet/intranets/fonts_novadata/fonts.css"); */
+
+/* montserrat */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap'); */
+/* poppins */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500&display=swap'); */
+
 /* Parte em testes */
 
 .main.shifted > #nav-sidebar + .content {
@@ -128,12 +135,7 @@ nav#nav-sidebar {
   
 
 
-/* @import url("https://novadata.com.br/intranet/intranets/fonts_novadata/fonts.css"); */
 
-/* montserrat */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-/* poppins */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500&display=swap');
 
 
 body {
@@ -456,7 +458,7 @@ tfoot td {
     border-top: 1px solid #DEDEDC;
 }
 
-thead th.requi#666666 {
+thead th.required {
     color: #0c0f0d;
 }
 
@@ -539,7 +541,7 @@ table thead th.sorted .sortoptions a {
     width: 14px;
     height: 14px;
     display: inline-block;
-    background: url(../img/sorting-icons.svg) 0 0 no-repeat;
+    /* background: url(../img/sorting-icons.svg) 0 0 no-repeat; */
     background-size: 14px auto;
 }
 
@@ -809,18 +811,18 @@ ul.messagelist li {
     font-size: 13px;
     padding: 10px 10px 10px 65px;
     margin: 0 0 10px 0;
-    background: #dfd url(../img/icon-yes.svg) 40px 12px no-repeat;
+    /* background: #dfd url(../img/icon-yes.svg) 40px 12px no-repeat; */
     background-size: 16px auto;
     color: #666666;
 }
 
 ul.messagelist li.warning {
-    background: #ffc url(../img/icon-alert.svg) 40px 14px no-repeat;
+    /* background: #ffc url(../img/icon-alert.svg) 40px 14px no-repeat; */
     background-size: 14px auto;
 }
 
 ul.messagelist li.error {
-    background: #ffefef url(../img/icon-no.svg) 40px 12px no-repeat;
+    /* background: #ffefef url(../img/icon-no.svg) 40px 12px no-repeat; */
     background-size: 16px auto;
 }
 
@@ -896,7 +898,7 @@ div.system-message p.system-message-title {
     padding: 4px 5px 4px 25px;
     margin: 0;
     color: #c11;
-    background: #ffefef url(../img/icon-no.svg) 5px 5px no-repeat;
+    /* background: #ffefef url(../img/icon-no.svg) 5px 5px no-repeat; */
 }
 
 .description {
@@ -930,23 +932,23 @@ div.breadcrumbs a:hover {
 .viewlink,
 .inlineviewlink {
     padding-left: 16px;
-    background: url(../img/icon-viewlink.svg) 0 1px no-repeat;
+    /* background: url(../img/icon-viewlink.svg) 0 1px no-repeat; */
 }
 
 .addlink {
     padding-left: 16px;
-    background: url(../img/icon-addlink.svg) 0 1px no-repeat;
+    /* background: url(../img/icon-addlink.svg) 0 1px no-repeat; */
 }
 
 .changelink,
 .inlinechangelink {
     padding-left: 16px;
-    background: url(../img/icon-changelink.svg) 0 1px no-repeat;
+    /* background: url(../img/icon-changelink.svg) 0 1px no-repeat; */
 }
 
 .deletelink {
     padding-left: 16px;
-    background: url(../img/icon-deletelink.svg) 0 1px no-repeat;
+    /* background: url(../img/icon-deletelink.svg) 0 1px no-repeat; */
 }
 
 a.deletelink:link,
@@ -1025,11 +1027,11 @@ a.deletelink:hover {
 
 .object-tools a.viewsitelink,
 .object-tools a.golink {
-    background-image: url(../img/tooltag-arrowright.svg);
+    /* background-image: url(../img/tooltag-arrowright.svg); */
 }
 
 .object-tools a.addlink {
-    background-image: url(../img/tooltag-add.svg);
+    /* background-image: url(../img/tooltag-add.svg); */
 }
 
 /* OBJECT HISTORY */
@@ -1376,8 +1378,8 @@ div#user-tools {
 }
 
 
-.requi#666666 label,
-label.requi#666666 {
+.required label,
+label.required {
     /* font-weight: bold !important; */
     /* text-decoration: underline; */
     color: #666666;
