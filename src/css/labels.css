@@ -1,0 +1,7 @@
+.required label,
+label.required {
+    /* font-weight: bold !important; */
+    /* text-decoration: underline; */
+    color: #333;
+    font-weight: 500 !important;
+}

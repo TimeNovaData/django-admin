@@ -1,6 +1,16 @@
 body {
+	--font-family: "Roboto", sans-serif;
 	--neutral-100: #0c0f0d;
-	--color-header:#510C76;
-	--color-fundo:#f7fffb;
-
+	--color-header: #510c76;
+	--color-fundo: #f7fffb;
+	--color-strong: #ff9016;
+	--color-adicionar: #cacaca;
+	--color-blackquote: #000000;
+	--color-separator: #cacaca;
+	--color-cinza: #666666;
+	--color-btn-adicionar: black;
+	--color-white: #fcfcfc;
+	--color-btn-secundary: #fcfcfc;
+	--color-alt: #ecebff;
+	--cor-cinza-claro: #dededc;
 }

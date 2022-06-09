@@ -1,150 +1,61 @@
-/* Parte em testes */
+@import "./variaveis.css";
+@import "./base.css";
+
+/* COMPONENTS */
+@import "./blockquote.css";
+@import "./buttons.css";
+@import "./inputs.css";
+@import "./table.css";
+@import "./texts.css";
+@import "./labels.css";
 
 .main.shifted > #nav-sidebar + .content {
     max-width: calc(100% - 50px) !important;
 }
 
 
-.required label, label.required {
-    /* font-weight: bold !important; */
-    /* text-decoration: underline; */
-    color: #333;
-    font-weight: 500 !important;
-}
-
-.form-row {
-    overflow: hidden;
-    padding: 10px;
-    font-size: 13px;
-    border-bottom: 1px solid #DEDEDC !important;
-}
-
-.form-row:hover {
-    background: #F7F7FA;
-}
-
 
 fieldset.module.aligned h2 {
     /* background: red !important; */
-    border-left: 7px solid #510C76;
+    border-left: 7px solid var(--color-header);
     padding: 11px 20px;
     margin-left: -8px !important;
-    color: #666666 !important;
-    font-family: 'montserrat' !important;
+    color: var(--color-cinza) !important;
+    font-family: var(--font-family) !important;
     text-transform: uppercase;
     font-size: 14px !important;
     font-weight: 500 !important;
 }
 
-input[type="submit"] {
-    background: #CACACA !important;
-    color: black !important;
-    margin-top: 50px !important;
+
+
+
+#content-main caption a {
+    color: var(--color-cinza) !important;
 }
-
-a.deletelink {
-    margin-top: 50px;
-    background: #ff7d7d !important;
+h1#site-name a:hover {
+    background: none !important;
 }
-
-a.deletelink:hover, input[type="submit"]:hover {
-    -webkit-box-shadow: 0px 3px 9px -2px rgba(0,0,0,0.37) !important;
-box-shadow: 0px 3px 9px -2px rgba(0,0,0,0.37) !important;
+#site-name img {
+    height: 39px !important;
 }
-
-
-/*
-    Todo esse arquivo Ã© baseado em bernardo.css
-
-    sÃ³ substitua as cores e fonts com replace all
-  */
-
-    /*em nenhuma hipÃ³tese use abreviaÃ§Ãµes de hexadecimais, pois em algum momento vocÃª pode dar replace all e trocar outras cores, que nÃ£o a que vocÃª quer. sempre 6 digitos.*/
-    .nossascores {
-
-        /*cor_preta*/
-        background: #0c0f0d;
-
-        /*cabeÃ§alho*/
-        background: #510C76;
-
-        /*strong*/
-        background: #FF9016;
-
-        /*cor_fundo (evita de usar alguma que jÃ¡ estÃ¡ sendo usada)*/
-        background: #f7fffb;
-
-        /*cor_botÃ£o_adicionar*/
-        background: #CACACA;
- 
-        /*cor_texto_botÃ£o_adicionar*/
-        background: #000000;
-       
-       /*segundo botÃ£o*/
-        background: #F0F0F1;
-
-        /*cor_cinza*/
-        background: #666666;
-
-        /*cor_branco*/
-        background: #fcfcfc;
-
-        /*cartÃµes*/
-        background: #ecebff;
-
-
-        /*cor_blackquote*/
-        background: #000000;
-
-        /*cinza claro*/
-        background: #DEDEDC;
-
-
- 
-    }
-
- 
-
-/* remoÃ§Ã£o do menu lateral */
-
-nav#nav-sidebar {
-    display: none !important;
-  }
-
-  button#toggle-nav-sidebar {
-    display: none !important;
-  }
-
-  #content-main caption a {
-    color: #666666 !important;
-  }
-    h1#site-name a:hover {
-        background: none !important;
-    }
-        #site-name img {
-            height: 39px !important;
-        }
-    
-  
-
-
 
 body {
     margin: 0;
     padding: 0;
     font-size: 14px;
     /* font-family: "Gotham", "Gotham", "Roboto", "Lucida Grande", "DejaVu Sans", "Bitstream Vera Sans", Verdana, Arial, sans-serif; */
-    font-family: 'montserrat' !important;
+    font-family: var(--font-family) !important;
 
-    color: #0c0f0d;
-    background: #f7fffb !important;
+    color: var(--neutral-100);
+    background: var(--color-fundo) !important;
 }
 
 /* LINKS */
 
 a:link,
 a:visited {
-    color:  #666666;
+    color: var(--color-cinza);
     text-decoration: none;
 }
 
@@ -153,8 +64,7 @@ a:focus {
 }
 
 a {
-    color: #0c0f0d;
-
+    color: var(--neutral-100);
 }
 
 a img {
@@ -162,12 +72,12 @@ a img {
 }
 
 a.section {
-    /* background: #FF9016 !important; */
+    /* background: var(--color-strong) !important; */
     padding: 11px 20px;
     margin-left: -8px !important;
-    /* color: #fcfcfc !important; */
+    /* color: var(--color-white) !important; */
     color: black !important;
-    border-left: 7px solid #FF9016;
+    border-left: 7px solid var(--color-border);
     font-size: 14px !important;
     font-weight: 500;
     /* font-family: verdana; */
@@ -175,7 +85,7 @@ a.section {
 
 a.section:link,
 a.section:visited {
-    color: #fcfcfc;
+    color: var(--color-white);
     text-decoration: none;
 }
 
@@ -189,7 +99,7 @@ p,
 ol,
 ul,
 dl {
-    margin: .2em 0 .8em 0;
+    margin: 0.2em 0 0.8em 0;
 }
 
 p {
@@ -215,13 +125,13 @@ h1 {
     margin: 0 0 20px;
     font-weight: 300;
     font-size: 20px;
-    color: #666666;
+    color: var(--color-cinza);
     margin-top: 35px !important;
 }
 
 h2 {
     font-size: 16px;
-    margin: 1em 0 .5em 0;
+    margin: 1em 0 0.5em 0;
 }
 
 h2.subhead {
@@ -231,21 +141,21 @@ h2.subhead {
 
 h3 {
     font-size: 14px;
-    margin: .8em 0 .3em 0;
-    color:  #666666;
+    margin: 0.8em 0 0.3em 0;
+    color: var(--color-cinza);
     font-weight: bold;
 }
 
 h4 {
     font-size: 12px;
-    margin: 1em 0 .8em 0;
+    margin: 1em 0 0.8em 0;
     padding-bottom: 3px;
 }
 
 h5 {
     font-size: 10px;
-    margin: 1.5em 0 .5em 0;
-    color:  #666666;
+    margin: 1.5em 0 0.5em 0;
+    color: var(--color-cinza);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -284,29 +194,21 @@ fieldset {
     margin: 0;
     padding: 0;
     border: none;
-    border-top: 1px solid #DEDEDC;
-}
-
-blockquote {
-    font-size: 11px;
-    color: #000000;
-    margin-left: 2px;
-    padding-left: 10px;
-    border-left: 5px solid #ddd;
+    border-top: 1px solid var(--color-border);
 }
 
 code,
 pre {
     /* font-family: "Gotham", "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace; */
-    font-family: 'montserrat' !important;
+    font-family: var(--font-family) !important;
 
-    color:  #666666;
+    color: var(--color-cinza);
     font-size: 12px;
 }
 
 pre.literal-block {
     margin: 10px;
-    background: #DEDEDC;
+    background: var(--cor-cinza-claro);
     padding: 6px 8px;
 }
 
@@ -316,70 +218,14 @@ code strong {
 
 hr {
     clear: both;
-    color: #DEDEDC;
-    background-color: #DEDEDC;
+    color: var(--cor-cinza-claro);
+    background-color: var(--color-separator);
     height: 1px;
     border: none;
     margin: 0;
     padding: 0;
     font-size: 1px;
     line-height: 1px;
-}
-
-/* TEXT STYLES & MODIFIERS */
-
-.small {
-    font-size: 11px;
-}
-
-.tiny {
-    font-size: 10px;
-}
-
-p.tiny {
-    margin-top: -2px;
-}
-
-.mini {
-    font-size: 10px;
-}
-
-p.mini {
-    margin-top: -3px;
-}
-
-.help,
-p.help,
-form p.help,
-div.help,
-form div.help,
-div.help li {
-    font-size: 11px;
-    color: #666666;
-}
-
-div.help ul {
-    margin-bottom: 0;
-}
-
-.help-tooltip {
-    cursor: help;
-}
-
-p img,
-h1 img,
-h2 img,
-h3 img,
-h4 img,
-td img {
-    vertical-align: middle;
-}
-
-.quiet,
-a.quiet:link,
-a.quiet:visited {
-    color: #666666;
-    font-weight: normal;
 }
 
 .float-right {
@@ -408,177 +254,6 @@ a.quiet:visited {
     background: #efefef;
 }
 
-
-/* TABLES */
-
-table {
-    border-collapse: collapse;
-    border-color: #DEDEDC;
-}
-
-td,
-th {
-    font-size: 13px;
-    line-height: 16px;
-    border-bottom: 1px solid #DEDEDC;
-    vertical-align: top;
-    padding: 8px;
-    /* font-family: "Gotham", "Roboto", "Lucida Grande", Verdana, Arial, sans-serif; */
-    font-family: 'montserrat' !important;
-
-}
-
-th {
-    font-weight: 600;
-    text-align: left;
-}
-
-thead th,
-tfoot td {
-    color:  #666666;
-    padding: 5px 10px;
-    font-size: 11px;
-    background: #fcfcfc;
-    border: none;
-    border-top: 1px solid #DEDEDC;
-    border-bottom: 1px solid #DEDEDC;
-}
-
-tfoot td {
-    border-bottom: none;
-    border-top: 1px solid #DEDEDC;
-}
-
-thead th.required{
-    color: #0c0f0d;
-}
-
-tr.alt {
-    background: #ecebff;
-}
-
-.row1 {
-    background: #fcfcfc;
-}
-
-.row2 {
-    background: #f9f9f9;
-}
-
-/* SORTABLE TABLES */
-
-thead th {
-    padding: 5px 10px;
-    line-height: normal;
-    text-transform: uppercase;
-    background: #DEDEDC;
-}
-
-thead th a:link,
-thead th a:visited {
-    color:  #666666;
-}
-
-thead th.sorted {
-    background: #DEDEDC;
-}
-
-thead th.sorted .text {
-    padding-right: 42px;
-}
-
-table thead th .text span {
-    padding: 8px 10px;
-    display: block;
-}
-
-table thead th .text a {
-    display: block;
-    cursor: pointer;
-    padding: 8px 10px;
-}
-
-table thead th .text a:focus,
-table thead th .text a:hover {
-    background: #DEDEDC;
-}
-
-thead th.sorted a.sortremove {
-    visibility: hidden;
-}
-
-table thead th.sorted:hover a.sortremove {
-    visibility: visible;
-}
-
-table thead th.sorted .sortoptions {
-    display: block;
-    padding: 9px 5px 0 5px;
-    float: right;
-    text-align: right;
-}
-
-table thead th.sorted .sortpriority {
-    font-size: .8em;
-    min-width: 12px;
-    text-align: center;
-    vertical-align: 3px;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-table thead th.sorted .sortoptions a {
-    position: relative;
-    width: 14px;
-    height: 14px;
-    display: inline-block;
-   /*  background: url(../img/sorting-icons.svg) 0 0 no-repeat; */
-    background-size: 14px auto;
-}
-
-table thead th.sorted .sortoptions a.sortremove {
-    background-position: 0 0;
-}
-
-table thead th.sorted .sortoptions a.sortremove:after {
-    content: '\\';
-    position: absolute;
-    top: -6px;
-    left: 3px;
-    font-weight: 200;
-    font-size: 18px;
-    color: #666666;
-}
-
-table thead th.sorted .sortoptions a.sortremove:focus:after,
-table thead th.sorted .sortoptions a.sortremove:hover:after {
-    color:  #666666;
-}
-
-table thead th.sorted .sortoptions a.sortremove:focus,
-table thead th.sorted .sortoptions a.sortremove:hover {
-    background-position: 0 -14px;
-}
-
-table thead th.sorted .sortoptions a.ascending {
-    background-position: 0 -28px;
-}
-
-table thead th.sorted .sortoptions a.ascending:focus,
-table thead th.sorted .sortoptions a.ascending:hover {
-    background-position: 0 -42px;
-}
-
-table thead th.sorted .sortoptions a.descending {
-    top: 1px;
-    background-position: 0 -56px;
-}
-
-table thead th.sorted .sortoptions a.descending:focus,
-table thead th.sorted .sortoptions a.descending:hover {
-    background-position: 0 -70px;
-}
-
 /* FORM DEFAULTS */
 
 input,
@@ -590,7 +265,7 @@ form .button {
     padding: 2px 3px;
     vertical-align: middle;
     /* font-family: "Gotham", "Roboto", "Lucida Grande", Verdana, Arial, sans-serif; */
-    font-family: 'montserrat' !important;
+    font-family: var(--font-family) !important;
 
     font-weight: normal;
     font-size: 13px;
@@ -604,31 +279,31 @@ textarea {
     vertical-align: top;
 }
 
-input[type=text],
-input[type=password],
-input[type=email],
-input[type=url],
-input[type=number],
-input[type=tel],
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="number"],
+input[type="tel"],
 textarea,
 select,
 .vTextField {
-    border: 1px solid #DEDEDC;
+    border: 1px solid var(--cor-cinza-claro);
     border-radius: 4px;
     padding: 5px 6px;
     margin-top: 0;
 }
 
-input[type=text]:focus,
-input[type=password]:focus,
-input[type=email]:focus,
-input[type=url]:focus,
-input[type=number]:focus,
-input[type=tel]:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
 textarea:focus,
 select:focus,
 .vTextField:focus {
-    border-color: #666666;
+    border-color: var(--color-cinza);
 }
 
 select {
@@ -642,15 +317,15 @@ select[multiple] {
 /* FORM BUTTONS */
 
 .button,
-input[type=submit],
-input[type=button],
+input[type="submit"],
+input[type="button"],
 .submit-row input,
 a.button {
-    background: #fcfcfc;
+    background: var(--color-white);
     padding: 10px 15px;
     border: none;
     border-radius: 4px;
-    color: #fcfcfc;
+    color: var(--color-white);
     cursor: pointer;
 }
 
@@ -659,50 +334,48 @@ a.button {
 }
 
 .button:active,
-input[type=submit]:active,
-input[type=button]:active,
+input[type="submit"]:active,
+input[type="button"]:active,
 .button:focus,
-input[type=submit]:focus,
-input[type=button]:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
 .button:hover,
-input[type=submit]:hover,
-input[type=button]:hover {
-    background: #FF9016;
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background: var(--color-strong);
 }
 
 .button[disabled],
-input[type=submit][disabled],
-input[type=button][disabled] {
+input[type="submit"][disabled],
+input[type="button"][disabled] {
     opacity: 0.4;
 }
 
 .button.default,
-input[type=submit].default,
+input[type="submit"].default,
 .submit-row input.default {
     float: right;
     border: none;
     font-weight: 400;
-    background: #fcfcfc;
+    background: var(--color-white);
     color: #0c0f0d !important;
 }
 
 .button.default:active,
-input[type=submit].default:active,
+input[type="submit"].default:active,
 .button.default:focus,
-input[type=submit].default:focus,
+input[type="submit"].default:focus,
 .button.default:hover,
-input[type=submit].default:hover {
+input[type="submit"].default:hover {
 }
 
 .button[disabled].default,
-input[type=submit][disabled].default,
-input[type=button][disabled].default {
+input[type="submit"][disabled].default,
+input[type="button"][disabled].default {
     opacity: 0.4;
 }
 
-
 /* MODULES */
-
 
 .module {
     border: none !important;
@@ -714,11 +387,11 @@ input[type=button][disabled].default {
     /* box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); */
     /* padding-left: 50px !important; */
     /* padding-right: 50px !important; */
-    /* border: 1px solid #666666; */
+    /* border: 1px solid var(--color-cinza); */
     margin: 0px;
     border-radius: 0px;
     padding: 25px !important;
-    background: #fcfcfc;;
+    background: var(--color-white);
     -webkit-box-shadow: 0px 9px 24px -14px rgba(0, 0, 0, 0.53) !important;
     -moz-box-shadow: 0px 9px 24px -14px rgba(0, 0, 0, 0.53) !important;
     box-shadow: 0px 9px 24px -14px rgba(0, 0, 0, 0.53) !important;
@@ -730,7 +403,7 @@ input[type=button][disabled].default {
 }
 
 a.addlink:hover {
-    background: #510C76 !important;
+    background: #510c76 !important;
     transition: 0.2s;
     color: white !important;
 }
@@ -738,10 +411,8 @@ a.addlink:hover {
 a.changelink:hover {
     background: white !important;
     transition: 0.2s;
-    color: #510C76 !important;
-
+    color: #510c76 !important;
 }
-
 
 .module p,
 .module ul,
@@ -763,7 +434,7 @@ a.changelink:hover {
 }
 
 .module h3 {
-    margin-top: .6em;
+    margin-top: 0.6em;
 }
 
 .module h2,
@@ -774,8 +445,8 @@ a.changelink:hover {
     font-weight: 400;
     font-size: 13px;
     text-align: left;
-    background: #fcfcfc;
-    color: #fcfcfc;
+    background: var(--color-white);
+    color: var(--color-white);
 }
 
 .module caption,
@@ -804,7 +475,7 @@ ul.messagelist li {
     margin: 0 0 10px 0;
     /* background: #dfd url(../img/icon-yes.svg) 40px 12px no-repeat; */
     background-size: 16px auto;
-    color: #666666;
+    color: var(--color-cinza);
 }
 
 ul.messagelist li.warning {
@@ -826,7 +497,7 @@ ul.messagelist li.error {
     color: #ba2121;
     border: 1px solid #ba2121;
     border-radius: 4px;
-    background-color: #fcfcfc;
+    background-color: var(--color-white);
     background-position: 5px 12px;
 }
 
@@ -834,7 +505,7 @@ ul.errorlist {
     margin: 0 0 4px;
     padding: 0;
     color: #ba2121;
-    background: #fcfcfc;
+    background: var(--color-white);
 }
 
 ul.errorlist li {
@@ -864,7 +535,7 @@ td ul.errorlist li {
 .form-row.errors {
     margin: 0;
     border: none;
-    border-bottom: 1px solid #DEDEDC;
+    border-bottom: 1px solid var(--cor-cinza-claro);
     background: none;
 }
 
@@ -882,7 +553,7 @@ div.system-message {
     background: #ffc;
     margin: 10px;
     padding: 6px 8px;
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
 div.system-message p.system-message-title {
@@ -900,17 +571,17 @@ div.system-message p.system-message-title {
 /* BREADCRUMBS */
 
 div.breadcrumbs {
-    background: #fcfcfc;
+    background: var(--color-white);
     padding: 10px 40px;
     border: none;
     font-size: 14px;
-    color: #666666;
-    text-align: left;    
+    color: var(--color-cinza);
+    text-align: left;
     box-shadow: 0px 1px 24px -14px rgb(0 0 0 / 55%) !important;
 }
 
 div.breadcrumbs a {
-    color: #666666 !important;
+    color: var(--color-cinza) !important;
 }
 
 div.breadcrumbs a:focus,
@@ -944,7 +615,7 @@ div.breadcrumbs a:hover {
 
 a.deletelink:link,
 a.deletelink:visited {
-    color: #CC3434;
+    color: #cc3434;
 }
 
 a.deletelink:focus,
@@ -962,7 +633,6 @@ a.deletelink:hover {
     float: right;
     position: relative;
     margin-top: -48px;
-    
 }
 
 .form-row .object-tools {
@@ -978,7 +648,6 @@ a.deletelink:hover {
     float: left;
     margin-left: 5px;
     height: 16px;
-    
 }
 
 .object-tools a {
@@ -989,9 +658,9 @@ a.deletelink:hover {
 .object-tools a:visited {
     display: block;
     float: left;
-    padding: 3px 12px;    
-    background-color: #fcfcfc;
-    border: 1px solid #FF9016;
+    padding: 3px 12px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-strong);
     font-weight: 400;
     font-size: 11px;
     text-transform: uppercase;
@@ -1000,8 +669,8 @@ a.deletelink:hover {
 
 .object-tools a:focus,
 .object-tools a:hover {
-    background-color: #fcfcfc;
-    border: 1px solid #FF9016;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-strong);
 }
 
 .object-tools a:focus {
@@ -1099,7 +768,7 @@ table#change-history tbody th {
     width: auto;
     height: 40px;
     padding: 10px 40px;
-    background: #510C76 !important;
+    background: #510c76 !important;
     line-height: 40px;
     color: #0c0f0d !important;
     overflow: hidden;
@@ -1109,17 +778,18 @@ table#change-history tbody th {
 }
 
 #header a:link,
-#header a:visited, #user-tools a {
-    color: #fcfcfc !important;
-    padding:5px;
-    margin:2px;
+#header a:visited,
+#user-tools a {
+    color: var(--color-white) !important;
+    padding: 5px;
+    margin: 2px;
 }
 
 #header a:focus,
 #header a:hover {
     transition-duration: 0.1s;
-    background: #CACACA;
-    border-radius:1px;
+    background: var(--color-adicionar);
+    border-radius: 1px;
 }
 
 #branding {
@@ -1161,9 +831,8 @@ table#change-history tbody th {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     text-align: right;
-    color: #fcfcfc !important;
+    color: var(--color-white) !important;
 }
-
 
 /* SIDEBAR */
 
@@ -1172,12 +841,12 @@ table#change-history tbody th {
 }
 
 #content-related .module {
-    background: #fcfcfc;
+    background: var(--color-white);
 }
 
 #content-related h3 {
     font-size: 14px;
-    color:  #666666;
+    color: var(--color-cinza);
     padding: 0 16px;
     margin: 0 0 16px;
 }
@@ -1206,16 +875,16 @@ table#change-history tbody th {
     background: none;
     padding: 16px;
     margin-bottom: 16px;
-    border-bottom: 1px solid #DEDEDC;
+    border-bottom: 1px solid var(--cor-cinza-claro);
     font-size: 18px;
-    color: #666666;
+    color: var(--color-cinza);
 }
 
 .delete-confirmation form input[type="submit"] {
     background: #ba2121;
     border-radius: 4px;
     padding: 10px 15px;
-    color: #fcfcfc;
+    color: var(--color-white);
 }
 
 .delete-confirmation form input[type="submit"]:active,
@@ -1232,14 +901,14 @@ table#change-history tbody th {
     background: #ddd;
     border-radius: 4px;
     padding: 10px 15px;
-    color: #666666;
+    color: var(--color-cinza);
     margin: 0 0 0 10px;
 }
 
 .delete-confirmation form .cancel-link:active,
 .delete-confirmation form .cancel-link:focus,
 .delete-confirmation form .cancel-link:hover {
-    background: #DEDEDC;
+    background: var(--cor-cinza-claro);
 }
 
 /* POPUP */
@@ -1255,56 +924,46 @@ table#change-history tbody th {
     padding: 10px 20px;
 }
 
-
-
 #content-main a {
     /* font-family: "Gotham Light" !important; */
 
-    font-family: 'montserrat' !important;
+    font-family: var(--font-family) !important;
 
     font-size: 14px !important;
     font-weight: 500 !important;
 }
 
-
-
-
 .submit-row {
     z-index: 1000 !important;
     padding: 22px 14px;
     margin: 0 0 20px;
-    background: #DEDEDC;
-    border-top: 1px solid #DEDEDC;
-    /* border: 1px solid #DEDEDC; */
+    background: var(--cor-cinza-claro);
+    border-top: 1px solid var(--cor-cinza-claro);
+    /* border: 1px solid var(--cor-cinza-claro); */
     border-radius: 0px;
     text-align: right;
     overflow: hidden;
-
 }
 
 input[type="submit"] {
-    background: #FF9016;
-    /* border: 1px solid #0c0f0d; */
-    color: #fcfcfc;;
+    background: var(--color-strong);
+    /* border: 1px solid var(--neutral-100); */
+    color: var(--color-white);
 }
 
-
-
 .button:active,
-input[type=submit]:active,
-input[type=button]:active,
+input[type="submit"]:active,
+input[type="button"]:active,
 .button:focus,
-input[type=submit]:focus,
-input[type=button]:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
 .button:hover,
-input[type=submit]:hover,
-input[type=button]:hover {
+input[type="submit"]:hover,
+input[type="button"]:hover {
     /* background: #609ab6; */
     outline: none !important;
     border: 0px;
-
 }
-
 
 div#recent-actions-module {
     padding: 4px !important;
@@ -1315,7 +974,7 @@ div#content-related {
 }
 
 body.dashboard.vsc-initialized strong {
-    color: #fcfcfc !important;
+    color: var(--color-white) !important;
 
     padding: 4px;
     margin: 0px 5px;
@@ -1331,13 +990,12 @@ a {
     color: #0c0f0d !important;
 }
 
-
 a.addlink {
     padding: 3px 30px !important;
     margin-top: -4px !important;
     font-weight: 800 !important;
     border-radius: 0px !important;
-    /* color: #fcfcfc; !important; */
+    /* color: var(--color-white); !important; */
 }
 
 .module h2,
@@ -1349,78 +1007,65 @@ a.addlink {
     font-size: 13px;
     text-align: left;
     background: none !important;
-    color: #fcfcfc;
+    color: var(--color-white);
 }
-
-
 
 div#user-tools a {
     font-weight: 400;
 }
 
-
 .breadcrumbs a {
-    color: #fcfcfc !important;
+    color: var(--color-white) !important;
 }
 
 div#user-tools {
-    /* color: #666666; */
+    /* color: var(--color-cinza); */
     font-weight: 400 !important;
 }
 
-
 .requiredlabel,
-label.required{
+label.required {
     /* font-weight: bold !important; */
     /* text-decoration: underline; */
-    color: #666666;
+    color: var(--color-cinza);
     font-weight: 500 !important;
 }
 
-
 div#user-tools strong {
-    color: #fcfcfc !important;
+    color: var(--color-white) !important;
 }
-
-
-
-
-
 
 /* EXTRA STYLES Ã°Å¸â€Â¹Ã°Å¸â€Â¹Ã°Å¸â€Â¹Ã°Å¸â€Â¹Ã°Å¸â€Â¹Ã°Å¸â€Â¹Ã°Å¸â€Â¹Ã°Å¸â€Â¹Ã°Å¸â€Â¹Ã°Å¸â€Â¹Ã°Å¸â€Â¹*/
 
-#content-main table>tbody>tr th {
+#content-main table > tbody > tr th {
     vertical-align: middle !important;
 }
 
-#content-main table>tbody>tr td {
+#content-main table > tbody > tr td {
     vertical-align: middle !important;
-
 }
 
-#content-main table>tbody>tr th:nth-child(1) a {
+#content-main table > tbody > tr th:nth-child(1) a {
     padding: 10px 20px;
     width: 90%;
     display: inline-block;
     padding-left: 5px;
-
 }
 
-#content-main table>tbody>tr th:nth-child(1) a:hover {
+#content-main table > tbody > tr th:nth-child(1) a:hover {
     text-decoration: underline !important;
 }
 
-#content-main table>tbody>tr td:nth-child(3) a {
+#content-main table > tbody > tr td:nth-child(3) a {
     font-weight: 500 !important;
-    background: #F0F0F1;
+    background: var(--color-btn-secundary);
     padding: 8px 20px;
 }
 
 a.addlink {
-    background: #CACACA !important;
-    color: #000000 !important;
+    background: var(--color-adicionar) !important;
+    color: var(--color-btn-adicionar) !important;
     padding: 8px 20px !important;
-    ;
     border-radius: 4px !important;
     margin: 0px 0 !important;
 }
@@ -1451,7 +1096,7 @@ form .tabular.inline-related.last-related {
 
 .dashboard .module table td a {
     display: block;
-    padding-right: .6em;
+    padding-right: 0.6em;
 }
 
 /* RECENT ACTIONS MODULE */
@@ -1520,11 +1165,11 @@ ul.actionlist li {
 }
 
 .toggle-nav-sidebar::before {
-    content: '\00BB';
+    content: "\00BB";
 }
 
 .main.shifted .toggle-nav-sidebar::before {
-    content: '\00AB';
+    content: "\00AB";
 }
 
 .main.shifted > #nav-sidebar {
@@ -1577,7 +1222,8 @@ ul.actionlist li {
 }
 
 @media (max-width: 767px) {
-    #nav-sidebar, #toggle-nav-sidebar {
+    #nav-sidebar,
+    #toggle-nav-sidebar {
         display: none;
     }
 
@@ -1585,8 +1231,4 @@ ul.actionlist li {
     .main.shifted > #nav-sidebar + .content {
         max-width: 100%;
     }
-}
-
-.teste{
-    background-color: #F0F0F1;
 }

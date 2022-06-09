@@ -1,0 +1,5 @@
+input[type="submit"] {
+    background: var(--color-adicionar) !important;
+    color: black !important;
+    margin-top: 50px !important;
+}
