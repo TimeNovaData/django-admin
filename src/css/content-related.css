@@ -1,0 +1,21 @@
+.dashboard {
+	#content-related {
+		background: var(--card-color, white);
+	}
+	.module {
+		> h2 {
+			font-weight: 700;
+			font-size: 18px;
+		}
+		.actionlist li {
+			background: initial !important;
+			padding: 0;
+			a {
+				color: var(--body-quiet-color);
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,117 @@
+.dashboard {
+  &.page-inicial {
+    #content {
+      flex-direction: row;
+    }
+    .module {
+      border-radius: 0.25rem;
+      border: 0 solid transparent;
+      overflow: hidden;
+
+      box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.05), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2),
+        -0.0625rem -0.0625rem 1.25rem rgba(206, 212, 218, 0.3);
+      border-radius: 0.25rem;
+      background: var(--card-color, white);
+
+      tbody {
+        tr {
+          display: flex;
+          width: 100%;
+          background: var(--card-color, white);
+          td {
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+          }
+          td:last-child {
+            padding-left: 0.5rem !important;
+            a {
+              margin-right: 0.5rem;
+            }
+          }
+          th {
+            display: flex;
+            flex: 1 1 100%;
+            padding: 0;
+            a {
+              padding: 0.9375rem 0.9375rem 0.9375rem 1.5rem;
+
+              width: 100%;
+              display: flex;
+              font-size: 0.875rem;
+              font-weight: 600;
+              color: var(--header-link-color);
+              &:hover {
+                text-decoration: underline;
+                color: var(--primary);
+              }
+            }
+          }
+          &:hover {
+            background: var(--darkened-bg);
+          }
+        }
+      }
+      table {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      tr:nth-child(even),
+      tr:nth-child(even) .errorlist,
+      tr:nth-child(odd) + .row-form-errors,
+      tr:nth-child(odd) + .row-form-errors .errorlist {
+        background: var(--body-bg);
+      }
+    }
+
+    #content {
+      flex-direction: row;
+      > h1 {
+        flex: 1 1 100%;
+      }
+      #content-related {
+        .module {
+          box-sizing: border-box;
+          > h2 {
+            padding: 24px 16px 16px;
+            color: #00000094;
+            font-size: 13px;
+            font-weight: 700;
+          }
+          > h3 {
+            padding: 0px 16px;
+            color: #00000094;
+            font-size: 13px;
+            font-weight: 700;
+            margin: 0;
+          }
+          .actionlist {
+            padding: 8px;
+            margin: 0;
+            li {
+              margin: 0;
+              padding: 0;
+              flex-direction: column;
+              display: flex;
+              align-items: flex-start;
+              padding: 8px 8px;
+              line-height: 100%;
+              border-top: 1px solid var(--hairline-color);
+              gap: 2px;
+
+              br {
+                display: none;
+              }
+
+              a {
+                font-size: 13px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

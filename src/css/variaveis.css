@@ -1,16 +1,58 @@
 body {
-	--font-family: "Roboto", sans-serif;
-	--neutral-100: #0c0f0d;
-	--color-header: #510c76;
-	--color-fundo: #f7fffb;
-	--color-strong: #ff9016;
-	--color-adicionar: #cacaca;
-	--color-blackquote: #000000;
-	--color-separator: #cacaca;
-	--color-cinza: #666666;
-	--color-btn-adicionar: black;
-	--color-white: #fcfcfc;
-	--color-btn-secundary: #fcfcfc;
-	--color-alt: #ecebff;
-	--cor-cinza-claro: #dededc;
+	--primary: #05f683;
+	--secondary: #11d276;
+	--default-button-hover-bg: #59e0a0;
+	--save-and-continue: #e8fbf2;
+
+	--header-link-color: #333333;
+	--body-bg: rgb(253, 253, 253);
+	--secondary-button-bg: rgba(0, 0, 0, 0.06);
+	--secondary-button-hover-bg: rgba(0, 0, 0, 0.15);
+	--body-quiet-color: #575757;
+	--accent: white;
+	--primary-fg: #fff;
+
+	--body-fg: #333333;
+	--body-loud-color: #000;
+
+	--header-color: white;
+	--header-branding-color: var(--accent);
+	--header-bg: var(--secondary);
+
+	--breadcrumbs-fg: var(--accent);
+	--breadcrumbs-link-fg: var(--body-bg);
+	--breadcrumbs-bg: var(--primary);
+
+	--link-fg: rgb(19, 19, 19);
+	--link-hover-color: var(--secondary);
+	--link-selected-fg: var(--secondary);
+
+	--hairline-color: #e8e8e8;
+	--border-color: #ccc;
+
+	--error-fg: #ba2121;
+
+	--message-success-bg: #dfd;
+	--message-warning-bg: #ffc;
+	--message-error-bg: #ffefef;
+
+	--darkened-bg: #f8f8f8; /* A bit darker than --body-bg */
+	--selected-bg: #e4e4e4; /* E.g. selected table cells */
+	--selected-row: #ffc;
+
+	--button-fg: #fff;
+	--button-bg: var(--primary);
+	--button-hover-bg: var(--secondary);
+	--default-button-bg: var(--secondary);
+
+	--close-button-bg: #888; /* Previously #bbb, contrast 1.92 */
+	--close-button-hover-bg: #747474;
+	--delete-button-bg: #ba2121;
+	--delete-button-hover-bg: #a41515;
+
+	--object-tools-fg: var(--button-fg);
+	--object-tools-bg: var(--close-button-bg);
+	--object-tools-hover-bg: var(--close-button-hover-bg);
+	/* --font-family: "Inter", sans-serif; */
+	--font-family: "Montserrat", sans-serif;
 }

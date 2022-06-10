@@ -1,5 +1,51 @@
-input[type="submit"] {
-    background: var(--color-adicionar) !important;
-    color: black !important;
-    margin-top: 50px !important;
+.dashboard {
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="url"],
+	input[type="number"],
+	input[type="tel"],
+	textarea,
+	select,
+	.vTextField {
+		min-height: 35px;
+		box-sizing: border-box;
+		&:focus-visible {
+			outline: -webkit-focus-ring-color auto 0px;
+		}
+	}
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	input[type="url"]:focus,
+	input[type="number"]:focus,
+	input[type="tel"]:focus,
+	textarea:focus,
+	select:focus,
+	.vTextField:focus {
+		border-color: var(--primary);
+	}
+
+
+	input[name="_continue"] {
+		background: var(--save-and-continue);
+		color: var(--link-fg);
+		border: 1px solid transparent;
+		&:hover {
+			border-color: var(--border-color);
+		}
+	}
+	input[name="_addanother"] {
+		background: transparent;
+		color: var(--link-fg);
+		border: 1px solid transparent;
+		&:hover {
+			border-color: var(--border-color);
+		}
+	}
+	.submit-row {
+		input[type="submit"] {
+			font-weight: 600;
+		}
+	}
 }

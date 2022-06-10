@@ -1,0 +1,11 @@
+.dashboard {
+	.toggle-nav-sidebar {
+		display: none !important;
+	}
+	#nav-sidebar {
+		display: none !important;
+	}
+	.main.shifted > #nav-sidebar + .content{
+		width: 100% !important;
+	}
+}

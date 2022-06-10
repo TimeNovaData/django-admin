@@ -1,0 +1,13 @@
+{
+	"files.exclude": {
+		"**/package-lock.json": true,
+		"**/.parcel-cache": true,
+		"**/node_modules": true
+	},
+	"emmet.includeLanguages": {
+		"css": "scss",
+	},
+	"files.associations": {
+		"*.css": "scss"
+	},
+}
