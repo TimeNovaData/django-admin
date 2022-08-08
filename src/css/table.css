@@ -2,6 +2,14 @@
 	table {
 		tbody {
 			tr {
+				input[type="checkbox"] {
+					cursor: pointer;
+				}
+				* {
+					vertical-align: middle;
+					line-height: 110%;
+				}
+
 				th {
 					vertical-align: middle !important;
 				}
@@ -25,4 +33,6 @@
 			}
 		}
 	}
+
+	
 }

@@ -3,6 +3,7 @@
 	"plugins": {
 		"postcss-import": {},
 		"postcss-nested": {},
+		"postcss-map":"{}"
 	}
 
 }

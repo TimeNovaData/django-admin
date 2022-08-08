@@ -26,7 +26,6 @@
 		border-color: var(--primary);
 	}
 
-
 	input[name="_continue"] {
 		background: var(--save-and-continue);
 		color: var(--link-fg);
@@ -48,4 +47,8 @@
 			font-weight: 600;
 		}
 	}
+	.vCheckboxLabel {
+		font-weight: 600 !important;
+	}
+
 }

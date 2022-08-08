@@ -67,9 +67,10 @@
     }
 
     #content {
+			margin-top: 32px;
       flex-direction: row;
       > h1 {
-        flex: 1 1 100%;
+        flex: 1 1 100%;	
       }
       #content-related {
         .module {
@@ -115,3 +116,4 @@
     }
   }
 }
+

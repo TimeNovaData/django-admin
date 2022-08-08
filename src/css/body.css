@@ -1,7 +1,12 @@
 body {
 	font-family: var(--font-family) !important;
-
+	transition: opacity 0.2s linear, transform 0.3s ease;
+	opacity: 0;
+	will-change: opacity;
 	* {
 		font-family: var(--font-family) !important;
+	}
+
+	&.DOMContentLoaded {
 	}
 }
